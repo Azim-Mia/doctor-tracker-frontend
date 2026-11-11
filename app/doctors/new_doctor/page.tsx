@@ -3,7 +3,9 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import DoctorForm from "@/app/components/doctors/DoctorForm";
+import DoctorForm,{
+  type DoctorFormData
+} from "@/app/components/doctors/DoctorForm";
 export default function NewDoctorPage() {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
