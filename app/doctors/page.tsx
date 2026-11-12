@@ -12,7 +12,7 @@ export default function DoctorsPage() {
         Doctors Management
       </div>
    <Link href='/doctors/new_doctor'> 
-   <Button text="Create New Patient" />
+   <Button text="Create New Doctor" />
    </Link>
   </div>
         <DoctorTable />
