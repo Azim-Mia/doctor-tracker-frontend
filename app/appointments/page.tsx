@@ -19,6 +19,7 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import Link from "next/link";
 
 interface Appointment {
   id: string;
@@ -194,14 +195,14 @@ export default function Appointments() {
               Manage and track all patient appointments.
             </p>
           </div>
-
+        <Link href='/appointments/new'> 
           <button
-            onClick={() => alert("Connect your Add Appointment form here.")}
             className="flex items-center justify-center gap-2 rounded-xl bg-blue-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-100 transition hover:bg-blue-700"
           >
             <Plus size={19} />
-            New Appointment
+          New Appointment
           </button>
+          </Link>
         </div>
 
         {/* Statistics */}
